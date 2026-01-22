@@ -10,4 +10,10 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\InvenPro.Domain\InvenPro.Domain.csproj" />
+    <ProjectReference Include="..\InvenPro.Services\InvenPro.Services.csproj" />
+    <ProjectReference Include="..\InvenPro.DAL\InvenPro.DAL.csproj" />
+  </ItemGroup>
+
 </Project>

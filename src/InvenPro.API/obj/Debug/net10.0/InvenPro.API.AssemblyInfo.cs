@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InvenPro.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2e42d94813cef0b6d38d562e119ed56ce57c09e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4b8410b94d0ced5840b09e95dfff5f481ea46fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("InvenPro.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InvenPro.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

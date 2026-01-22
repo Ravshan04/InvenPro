@@ -36,6 +36,43 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "InvenPro.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "InvenPro.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InvenPro.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InvenPro.DAL.dll": {}
+        }
+      },
+      "InvenPro.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/InvenPro.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InvenPro.Domain.dll": {}
+        }
+      },
+      "InvenPro.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "InvenPro.DAL": "1.0.0",
+          "InvenPro.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InvenPro.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InvenPro.Services.dll": {}
+        }
       }
     }
   },
@@ -75,10 +112,28 @@
         "microsoft.openapi.2.0.0.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "InvenPro.DAL/1.0.0": {
+      "type": "project",
+      "path": "../InvenPro.DAL/InvenPro.DAL.csproj",
+      "msbuildProject": "../InvenPro.DAL/InvenPro.DAL.csproj"
+    },
+    "InvenPro.Domain/1.0.0": {
+      "type": "project",
+      "path": "../InvenPro.Domain/InvenPro.Domain.csproj",
+      "msbuildProject": "../InvenPro.Domain/InvenPro.Domain.csproj"
+    },
+    "InvenPro.Services/1.0.0": {
+      "type": "project",
+      "path": "../InvenPro.Services/InvenPro.Services.csproj",
+      "msbuildProject": "../InvenPro.Services/InvenPro.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "InvenPro.DAL >= 1.0.0",
+      "InvenPro.Domain >= 1.0.0",
+      "InvenPro.Services >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.1"
     ]
   },
@@ -106,7 +161,17 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/rocky/IMS/InvenPro/src/InvenPro.DAL/InvenPro.DAL.csproj": {
+              "projectPath": "/home/rocky/IMS/InvenPro/src/InvenPro.DAL/InvenPro.DAL.csproj"
+            },
+            "/home/rocky/IMS/InvenPro/src/InvenPro.Domain/InvenPro.Domain.csproj": {
+              "projectPath": "/home/rocky/IMS/InvenPro/src/InvenPro.Domain/InvenPro.Domain.csproj"
+            },
+            "/home/rocky/IMS/InvenPro/src/InvenPro.Services/InvenPro.Services.csproj": {
+              "projectPath": "/home/rocky/IMS/InvenPro/src/InvenPro.Services/InvenPro.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
